@@ -79,12 +79,9 @@ input {
 }
 
 .user-profile {
-  display: flex;;
+  display: flex;
 }
 
-/* .image-container {
-  margin-right: 0px;
-} */
 
 .image {
   max-height:200px;
@@ -124,18 +121,16 @@ input {
 
 .delete-btn {
   display: inline-block;
-  color: #f0f0f0;
+  color: #e9e7e7;
   background-color: #d0221c;
   border: 2px solid #d0221c;
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
-  /* align-self: flex-end; */
 }
 
-
-
-.cancel-form-btn {
+.cancel-post-btn a,
+.cancel-form-btn{
   color: #04baba;
   background-color: #eaeeeb;
   border: 2px solid #04baba;
@@ -205,3 +200,4 @@ small a{
   color: #858484;
   font-style: italic;
 }
+

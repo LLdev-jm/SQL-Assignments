@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}User{% endblock %}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+{% block content %}{% endblock %}
+
+{% with messages = get_flashed_messages(with_categories=True) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      {% if category == 'warning' %}
+        <div class="warning">
+          <p>{{ message | safe }}</p>
+        </div>
+      {% elif category == 'success' %}
+        <div class="success">
+          <p>{{ message | safe }}</p>
+        </div>
+      {% else %}
+        <div class="general">
+          <p>{{ message | safe }}</p>
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+</body>
+</html>
