@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Tags List{% endblock %}
+
+{% block content %}
+
+<h1>Tags</h1>
+
+<ul>
+  {% for tag in tags %}
+  <li>
+    <a href="/tags/{{tag.id}}">{{ tag.name}}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+
+
+<!-- <button type="button" class="add-btn" onclick="window.location.href='/users/form'">Add Userrrr</button> -->
+<div class="add-btn">
+  <a href="/tags/form" method='GET'>Add Tag</a>
+  <!-- <a href="/">Recent Posts</a> -->
+</div>
+
+{% endblock %}

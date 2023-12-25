@@ -131,12 +131,13 @@ input {
 
 .cancel-post-btn a,
 .cancel-form-btn{
+  display: inline-block;
   color: #04baba;
   background-color: #eaeeeb;
   border: 2px solid #04baba;
   border-radius: 5px;
   padding: 9px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 
@@ -201,3 +202,16 @@ small a{
   font-style: italic;
 }
 
+.tag-checkbox {
+  /* justify-content: space-between; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}

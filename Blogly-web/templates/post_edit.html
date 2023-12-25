@@ -8,7 +8,7 @@
 <h1>Edit Post</h1>
 <h2>{{ post.title }}</h2>
 
-<form action="/posts/{{ post.id }}/edit" method='POST'>
+<form action="/posts/{{ post.id }}/edit" method='POST' >
 
       <div class="form-row">
         <label for="title" class="label-title">Edit Title:</label>
@@ -22,7 +22,7 @@
 
   <!-- <div> -->
       <a href="/users/{{ post.user_id }}" class="cancel-form-btn">Cancel</a>
-      <button type="submit" class="add-post-btn">Save Edit</button>
+      <button type="submit" class='save-form-btn'>Save Edit</button>
   <!-- </div> -->
 
 </form>
