@@ -15,6 +15,11 @@ Assignments( exercises / projects ) currently include :
 1.  SQL Querying
   - This section covers fundamental SQL queries, providing a solid foundation for database interactions.
 
+2. SQL Joins
+
+3. DDL Design (Data Modeling)
+
+4. Blogly
 
 ## **Progress** 🌱
 
